@@ -1,0 +1,318 @@
+body{
+    font-family: "Mooli";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f0f0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23c7b4a9' fill-opacity='0.39'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+.container{
+    width: 100%;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+}
+.underlay{
+    z-index: 0;
+}
+.myshadow{
+    text-shadow: 1px 1px 1px #343a40(0, 0, 0,0.5);
+}
+.overlay{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    background-image: url("/project_00/img/Default_128k_resolution_highly_defined_0_e2bd75af-7598-4ec3-8e4b-2310045bcfbc_1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0px 10px 10px 0px;
+    height: 100%;
+    transition: transform 0.7s;
+}
+.overlay-ins{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.overlay-1,.overlay-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}
+.overlay-1{
+    transform: translateX(0%);
+}
+.overlay-2{
+    transform: translateX(-100%);
+}
+.mynormbtn{
+    border: 0;
+    background-color: #26577c;
+    color: white;
+}
+.mynormbtn:hover{
+    background-color: #2473af !important;
+    color: white !important;
+}
+.mynormbtn:disabled{
+    background-color: #26577cc5;
+    color: white;
+}
+@media(min-width: 1201px){
+    body{
+        min-height: 100vh;
+    }
+    .mybtn{
+        width: 30%;
+    }
+    .overlay{
+        width: 50%;
+    }
+    .otpinpbox{
+        height: 40px;
+    }
+    .verifyotpbtn{
+        width: 100%;
+    }
+    .deshead{
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    .desdesc{
+        font-size: 17px;
+    }
+    .desques{
+        font-size: 17px;
+        margin-top: 120px;
+    }
+    .desbtn{
+        width: 140px;
+    }
+    .myclrbtn{
+        border: 0;
+        background-color: #ebe4d1;
+        color: black;
+    }
+    .myclrbtn:hover{
+        background-color: #d4cbb1 !important;
+        color: black !important;
+    }
+}
+@media(min-width: 993px)and (max-width: 1200px){
+    body{
+        min-height: 100vh;
+    }
+    .textreducer{
+        font-size: 15px;
+    }
+    .mybtn{
+        width: 25%;
+        padding: 5px;
+    }
+    .overlay{
+        width: 50%;
+    }
+    .otpinpbox{
+        height: 40px;
+    }
+    .verifyotpbtn{
+        width: 100%;
+    }
+    .deshead{
+        font-size: 50px;
+        margin-top: 15px;
+    }
+    .desdesc{
+        font-size: 15px;
+    }
+    .desques{
+        font-size: 15px;
+        margin-top: 110px;
+    }
+    .desbtn{
+        width: 120px;
+    }
+    .myclrbtn{
+        border: 0;
+        background-color: #ebe4d1;
+        color: black;
+    }
+    .myclrbtn:hover{
+        background-color: #d4cbb1 !important;
+        color: black !important;
+    }
+}
+@media(min-width: 768px)and (max-width: 992px){
+    body{
+        min-height: 100vh;
+    }
+    .mybtn{
+        width: 30%;
+    }
+    .overlay{
+        width: 50%;
+    }
+    .otpinpbox{
+        height: 40px;
+    }
+    .verifyotpbtn{
+        font-size: 13px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+    .deshead{
+        font-size: 40px;
+        margin-top: 0px;
+    }
+    .desdesc{
+        font-size: 13px;
+    }
+    .desques{
+        font-size: 13px;
+        margin-top: 100px;
+    }
+    .desbtn{
+        width: 100px;
+    }
+    .myclrbtn{
+        border: 0;
+        background-color: #ebe4d1;
+        color: black;
+    }
+    .myclrbtn:hover{
+        background-color: #d4cbb1 !important;
+        color: black !important;
+    }
+}
+@media (min-width: 577px) and (max-width: 767px){
+    body{
+        min-height: 90vh;
+        background-attachment: fixed;
+    }
+    .container{
+        background-image: url("/project_00/img/Default_128k_resolution_highly_defined_0_e2bd75af-7598-4ec3-8e4b-2310045bcfbc_1.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .underlay{
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 40px 100px 40px 100px;
+    }
+    .mybtn{
+        width: 33%;
+    }
+    .verifyotpbtn{
+        font-size: 13px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+    .otpinpbox{
+        height: 40px;
+    }
+    .smhead{
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    .myclrbtn{
+        border: 0;
+        background-color: #343a40;
+        color: white;
+    }
+    .myclrbtn:hover{
+        background-color: #4b4b4b !important;
+        color: white !important;
+    }
+}
+@media (max-width: 576px){
+    body{
+        min-height: 90vh;
+        background-attachment: fixed;
+    }
+    .container{
+        background-image: url("/project_00/img/Default_128k_resolution_highly_defined_0_e2bd75af-7598-4ec3-8e4b-2310045bcfbc_1.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .underlay{
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 40px 25px 40px 25px;
+    }
+    .verifyotpbtn{
+        font-size: 13px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+    .otpinpbox{
+        height: 40px;
+        font-size: 12px;
+    }
+    .textreducer{
+        font-size: 13px;
+    }
+    .chkbxreducer{
+        height: 10px;
+        width: 10px;
+    }
+    .mybtn{
+        width: 35%;
+    }
+    .myclrbtn{
+        border: 0;
+        background-color: #343a30;
+        color: white;
+    }
+    .myclrbtn:hover{
+        background-color: #343a40 !important;
+        color: white !important;
+    }
+}
+@keyframes excont1{
+    0%,100%{
+        transform: scaleY(100%);
+    }
+    50%{
+        transform: scaleY(105%);
+    }
+}
+@keyframes excont2{
+    0%,100%{
+        transform: scaleY(100%);
+    }
+    50%{
+        transform: scaleY(105%);
+    }
+}
+@keyframes blinker{
+    0%,100%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 10%;
+    }
+}
+.excont1{
+    animation: excont1 0.75s 1;
+}
+.excont2{
+    animation: excont2 0.75s 1;
+}
+.blinker{
+    animation: blinker 1s infinite;
+}

@@ -1,0 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION["signunamenew"])){
+    unset($_SESSION["signunamenew"]);
+    session_destroy();
+    setcookie("signunamenew","",time()-3600000,"/");
+}
+header("Location:/project_00/login/index.php");
+exit;
+?>

@@ -1,0 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION["resetpassword"])){
+    unset($_SESSION["resetpassword"]);
+    session_destroy();
+    setcookie("resetpassword","",time()-3600000,"/");
+}
+header("Location:/project_00/login/index.php");
+exit;
+?>

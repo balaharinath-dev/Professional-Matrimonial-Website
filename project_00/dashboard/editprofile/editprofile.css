@@ -1,0 +1,198 @@
+:root{
+    --bs-dropblue-bg: #5a8ec2;
+    --bs-dropbluehover: #3a71a8;
+    --bs-dropblueactive: #3a71a8;
+    --bs-white: white;
+}
+body{
+    font-family: "Mooli";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f0f0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23c7b4a9' fill-opacity='0.39'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+.mycontainer-fluid{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.mycontainer-fluid:hover{
+    border: 1px rgba(0, 0, 0, 0.3) solid;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.sticky-top{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo{
+    font-family: "Yatra One" !important;
+}
+.mydropbtn{
+    --bs-btn-bg: var(--bs-dropblue-bg);
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-hover-bg: var(--bs-dropbluehover);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-active-bg: var(--bs-dropblueactive);
+    --bs-btn-active-color: var(--bs-white);
+}
+.mybtn{
+    background-color: #26577c;
+    color: white;
+}
+.mybtn:hover{
+    background-color: #2473af !important;
+    color: white !important;
+}
+.mybtn:disabled{
+    background-color: #26577cc5;
+    color: white;
+}
+.myclrbtn{
+    border: 0;
+    background-color: #ebe4d1;
+    color: black;
+}
+.myclrbtn:hover{
+    background-color: #d4cbb1 !important;
+    color: black !important;
+}
+.list-group {
+    border: none;
+}
+.list-group-item {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: none;
+    transition: background-color 0.3s;
+}
+.list-group-item:hover {
+    background-color: #ebe4d1;
+}
+.list-group-item.active {
+    background-color: #26577c;
+    color: white; 
+}
+.img-fluid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.account{
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 5px;
+    position: relative;
+}
+.custom-tooltip{
+    --bs-tooltip-bg: rgba(0, 0, 0, 0.8);
+    --bs-tooltip-color: rgb(255, 255, 255);
+    --bs-tooltip-arrow-height: 10px;
+}
+.start-25{
+    left: 25%;
+}
+.start-75{
+    left: 75%;
+}
+.form-select{
+    height: 58px !important;
+}
+textarea::placeholder{
+    color: black !important;
+}
+@media(min-width: 1201px){
+    .s-canvas{
+        width: 27% !important;
+    }
+    .signhead{
+        font-size: 40px;
+    }
+    .account{
+        font-size: 12px;
+    }
+    .datetext{
+        font-size: 15px; 
+    }
+    .dateinp{
+        margin-top: 2px;
+    }
+}
+@media(min-width: 992px)and (max-width: 1200px){
+    .s-canvas{
+        width: 33% !important;
+    }
+    .signhead{
+        font-size: 36px;
+    }
+    .account{
+        font-size: 10px;
+    }
+    .datetext{
+        font-size: 13px;
+    }
+    .dateinp{
+        margin-top: 2px;
+    }
+    .mobcode{
+        font-size: 14px !important;
+    }
+}
+@media(min-width: 768px)and (max-width: 992px){
+    .s-canvas{
+        width: 42% !important;
+    }
+    .signhead{
+        font-size: 34px;
+    }
+    .account{
+        font-size: 9px;
+    }
+    .datetext{
+        font-size: 13px;
+    }
+    .dateinp{
+        margin-top: 2px;
+    }
+}
+@media (min-width: 576px)and (max-width: 767px){
+    .s-canvas{
+        width: 55% !important;
+    }
+    .signhead{
+        font-size: 32px;
+    }
+    .account{
+        font-size: 8px;
+    }
+    .datetext{
+        font-size: 13px;
+    }
+    .dateinp{
+        margin-top: 2px;
+    }
+}
+@media (max-width: 575px){
+    .s-canvas{
+        width: 80% !important;
+    }
+    .signhead{
+        font-size: 30px;
+    }
+    .account{
+        font-size: 11px;
+    }
+    .datetext{
+        font-size: 13px;
+    }
+    .dateinp{
+        margin-top: 2px;
+    }
+}
