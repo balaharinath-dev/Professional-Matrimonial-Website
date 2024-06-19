@@ -10,7 +10,7 @@ if(isset($_COOKIE["logunamenew"])||isset($_SESSION["logunamenew"])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/project_00/icons8-chatbot-32.ico" type="image/x-icon">
+    <link rel="icon" href="../icons8-chatbot-32.ico" type="image/x-icon">
     <title>Safari</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -21,7 +21,7 @@ if(isset($_COOKIE["logunamenew"])||isset($_SESSION["logunamenew"])){
         <div class="row mx-xl-4 my-xl-5 px-xl-3 py-xl-0 mx-lg-4 my-lg-4 px-xl-3 py-xl-0 mx-md-0 my-md-0 px-md-0 py-md-4 mx-sm-0 my-sm-0 px-sm-0 py-sm-0 mx-0 my-0 px-0 py-0 justify-content-between">
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 d-xl-block d-lg-block d-md-block d-sm-block d-block underlay pt-xl-0 pt-lg-0 pt-md-0 pt-sm-2 pt-2" id="underlay-1">
                 <div class="d-xl-none d-lg-none d-md-none d-sm-block d-block text-center">
-                    <img height="100px" width="100px" src="/project_00/svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg">
+                    <img height="100px" width="100px" src="../svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg">
                 </div>
                 <form method="post" id="logform">
                     <div class="row">
@@ -54,7 +54,7 @@ if(isset($_COOKIE["logunamenew"])||isset($_SESSION["logunamenew"])){
             </div>
             <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 d-xl-block d-lg-block d-md-block d-sm-none d-none underlay pt-xl-0 pt-lg-0 pt-md-0 pt-sm-2 pt-2" id="underlay-2">
                 <div class="d-xl-none d-lg-none d-md-none d-sm-block d-block text-center">
-                    <img height="100px" width="100px" src="/project_00/svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg">
+                    <img height="100px" width="100px" src="../svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg">
                 </div>
                 <form method="post" id="signform">
                     <div class="row">
@@ -92,14 +92,14 @@ if(isset($_COOKIE["logunamenew"])||isset($_SESSION["logunamenew"])){
             <div class="overlay text-center p-xl-0 p-lg-0 d-xl-block d-lg-block d-md-block d-sm-none d-none" id="overlay" style="color: #343a40;">
                 <div class="row m-xl-0 p-xl-0 m-lg-0 p-lg-0 m-md-0 p-md-0 overlay-ins">
                     <div class="col-xl-12 m-xl-0 p-xl-0 m-lg-0 p-lg-0 m-md-0 p-md-0 overlay-1" id="overlay-1">
-                        <img height="100px" width="100px" src="/project_00/svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg">
+                        <img height="100px" width="100px" src="../svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg">
                         <h1 class="mb-xl-0 mb-lg-0 mb-md-0 myshadow deshead">Welcome back!</h1>
                         <p class="m-xl-0 m-lg-0 m-md-0 myshadow desdesc">Login to continue your journey...</p>
                         <p class="mb-xl-2 mb-lg-0 mb-md-0 myshadow desques">Don't have an account?</p>
                         <button type="click" class="btn btn-outline-dark text-center m-xl-0 m-lg-0 m-md-0 desbtn" id="signslide">Sign up</button>
                     </div>
                     <div class="col-xl-12 m-xl-0 p-xl-0 m-lg-0 p-lg-0 m-md-0 p-md-0 overlay-2" id="overlay-2">
-                    <img height="100px" width="100px" src="/project_00/svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg">
+                    <img height="100px" width="100px" src="../svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg>
                         <h1 class="mb-xl-0 mb-lg-0 mb-md-0 myshadow deshead">Hello mate!</h1>
                         <p class="m-xl-0 m-lg-0 m-md-0 myshadow desdesc">Sign up to start your journey...</p>                        
                         <p class="mb-xl-2 mb-lg-0 mb-md-0 myshadow desques">Already a User?</p>
