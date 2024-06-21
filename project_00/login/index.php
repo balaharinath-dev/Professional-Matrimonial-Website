@@ -99,7 +99,11 @@ if(isset($_COOKIE["logunamenew"])||isset($_SESSION["logunamenew"])){
                         <button type="click" class="btn btn-outline-dark text-center m-xl-0 m-lg-0 m-md-0 desbtn" id="signslide">Sign up</button>
                     </div>
                     <div class="col-xl-12 m-xl-0 p-xl-0 m-lg-0 p-lg-0 m-md-0 p-md-0 overlay-2" id="overlay-2">
+<<<<<<< HEAD
                     <img height="100px" width="100px" src="../svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg">
+=======
+                    <img height="100px" width="100px" src="../svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg>
+>>>>>>> fc46c65ef92893f800507a8d624b3c235dbdfe27
                         <h1 class="mb-xl-0 mb-lg-0 mb-md-0 myshadow deshead">Hello mate!</h1>
                         <p class="m-xl-0 m-lg-0 m-md-0 myshadow desdesc">Sign up to start your journey...</p>                        
                         <p class="mb-xl-2 mb-lg-0 mb-md-0 myshadow desques">Already a User?</p>
