@@ -15,12 +15,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $mail->isSMTP();
         $mail->Host='smtp.gmail.com';
         $mail->SMTPAuth=true;
-        $mail->Username='*your_email_id*';
-        $mail->Password='*your_email_app_password*';
+        $mail->Username='your_mail_here';
+        $mail->Password='your_app_password_here';
         $mail->SMTPSecure='tls';
         $mail->Port=587;
 
-        $mail->setFrom('*your_email_id*','Safari');
+        $mail->setFrom('your_mail_here','Safari');
         $mail->addAddress($username);
         $mail->isHTML(true);
 

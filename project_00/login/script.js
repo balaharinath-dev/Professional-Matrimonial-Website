@@ -33,7 +33,7 @@ signform.addEventListener("submit",(event)=>{
                         otpinfo.innerHTML="Sending OTP...";
                         otpval=Math.floor(100000+Math.random()*900000).toString();
                         const otp=new XMLHttpRequest();
-                        otp.open("POST","/project_00/sendotp.php",true);
+                        otp.open("POST","../sendotp.php",true);
                         otp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                         otp.send('signunamenew='+encodeURIComponent(signunamenew)+'&otpval='+encodeURIComponent(otpval));
                         otp.onreadystatechange=function(){
@@ -164,7 +164,7 @@ signform.addEventListener("submit",(event)=>{
             if (sgn.readyState===4&&sgn.status===200) {
                 var newresponse=sgn.responseText;
                 if(newresponse==="success"){
-                    window.location.href="/project_00/login/signup_pgs/signup_pg1.php";
+                    window.location.href="signup_pgs/signup_pg1.php";
                 }
                 if(newresponse==="invalid"){
                     alert("Error occured");
@@ -193,7 +193,7 @@ logform.addEventListener("submit",(event)=>{
             if(xhr.readyState===4&&xhr.status===200){
                 var response=xhr.responseText;
                 if(response==="success"){
-                    window.location.href="/project_00/dashboard/intro.php";
+                    window.location.href="../dashboard/intro.php";
                     //modal?
                 }
                 else if(response==="usernamenotfound"){

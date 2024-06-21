@@ -85,7 +85,7 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/project_00/icons8-chatbot-32.ico" type="image/x-icon">
+    <link rel="icon" href="../icons8-chatbot-32.ico" type="image/x-icon">
     <title>Edit Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="editprofile.css">
@@ -102,7 +102,7 @@ mysqli_close($conn);
                     <div class="col-4 p-0 d-flex justify-content-center align-items-center">
                         <h3 class="logo p-2 pb-0 m-0">
                             <div class="row m-0">
-                                <div class="col-4 px-0"><img height="40px" width="40px" src="/project_00/svg/mysvg.svg"></div>
+                                <div class="col-4 px-0"><img height="40px" width="40px" src="../svg/mysvg.svg"></div>
                                 <div class="col-8 px-0 d-flex justify-content-center align-items-center"><p class="p-0 m-0 mb-2 mb-sm-2 mb-md-1 mb-lg-1 mb-lg-1">Safari</p></div>
                             </div>
                         </h3>

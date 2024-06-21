@@ -758,7 +758,7 @@ if(pwordform){
                             }
                         });
                         const cong=new XMLHttpRequest();
-                        cong.open("POST","/project_00/sendcongragulation.php",true);
+                        cong.open("POST","./sendcongragulation.php",true);
                         cong.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                         cong.send();
                         cong.onreadystatechange=function(){

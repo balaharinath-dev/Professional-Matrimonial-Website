@@ -5,7 +5,7 @@ if(!isset($_SESSION["logunamenew"])&&isset($_COOKIE["logunamenew"])){
     $_SESSION["logunamenew"]=$logunamenew;
 }
 if(isset($_SESSION["logunamenew"])){
-    header("Location:/project_00/dashboard/intro.php");
+    header("Location:../dashboard/intro.php");
     exit;
 }
 if(!isset($_SESSION["signunamenew"])&&isset($_COOKIE["signunamenew"])){

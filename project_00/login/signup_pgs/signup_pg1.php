@@ -11,7 +11,7 @@ $accusername=$_SESSION["signunamenew"];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/project_00/icons8-chatbot-32.ico" type="image/x-icon">
+    <link rel="icon" href="icons8-chatbot-32.ico" type="image/x-icon">
     <title>Create account</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="account.css">
@@ -23,7 +23,7 @@ $accusername=$_SESSION["signunamenew"];
             <div class="col-12 p-0">
                 <div class="row m-0">
                     <div class="d-block text-center mb-2">
-                        <img height="70px" width="70px" src="/project_00/svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg">
+                        <img height="70px" width="70px" src="./svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg">
                     </div>
                     <div class="col-lg-8 col-10 p-0 px-md-3 px-sm-1 px-3 d-flex mb-sm-5 mb-1 align-items-center">
                         <span class="signhead"><b>Create account</b></span>

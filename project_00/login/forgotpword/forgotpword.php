@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_COOKIE["logunamenew"])||isset($_SESSION["logunamenew"])){
-    header("Location:/project_00/login/login.php");
+    header("Location:../login/login.php");
     exit;
 }
 ?>
@@ -10,7 +10,7 @@ if(isset($_COOKIE["logunamenew"])||isset($_SESSION["logunamenew"])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/project_00/icons8-chatbot-32.ico" type="image/x-icon">
+    <link rel="icon" href="./icons8-chatbot-32.ico" type="image/x-icon">
     <title>User authorization</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="fpword.css">
@@ -23,7 +23,7 @@ if(isset($_COOKIE["logunamenew"])||isset($_SESSION["logunamenew"])){
                 <form method="post" id="signform">
                     <div class="row mycontainer-fluid pt-3 pb-2 px-sm-5 px-3">
                         <div class="d-block text-center mb-2">
-                            <img height="70px" width="70px" src="/project_00/svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg">
+                            <img height="70px" width="70px" src="./svg/Default_128k_resolution_1_eccc354f-f5cb-4d1f-a28a-1522f05c3cae_0.svg">
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-xl-4 mb-lg-4 mb-md-4 mb-sm-3 mb-3">
                             <h1 class="smhead mt-0">User authorization</h1>
@@ -50,7 +50,7 @@ if(isset($_COOKIE["logunamenew"])||isset($_SESSION["logunamenew"])){
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-0 mb-4 d-none valid-feedback ps-3 w-50" id="finalmsg"></div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-5 text-end">
-                            <a href="/project_00/login/index.php" role="button" class="btn mynormbtn float-start">Back</a>
+                            <a href="../index.php" role="button" class="btn mynormbtn float-start">Back</a>
                             <button class="btn myclrbtn mybtn" type="reset">Clear</button>
                             <button class="btn mynormbtn mybtn ms-xl-2 ms-lg-2 ms-md-1 ms-sm-1 ms-1" type="submit" id="signin" value="signin" disabled>Next</button>
                         </div>

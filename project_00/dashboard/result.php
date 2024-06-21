@@ -18,19 +18,19 @@ if(mysqli_stmt_execute($stmtnew)){
     mysqli_stmt_store_result($stmtnew);
     mysqli_stmt_bind_result($stmtnew, $colsfid, $colfirstname, $colmidname, $collastname, $coljob, $colmartialstatus, $colage, $realcolphoto, $realcolphototype);
     while(mysqli_stmt_fetch($stmtnew)){
-        $sqlnxt="SELECT COUNT(`interestedin`) FROM `interest` WHERE `interestedin`=?;";
-        $stmtnxt=mysqli_prepare($conn,$sqlnxt);
-        if(!$stmtnxt){
-            die("Statement preparation failed:".mysqli_error($conn));
-        }
-        mysqli_stmt_bind_param($stmtnxt,"s",$sfid);
-        if(mysqli_stmt_execute($stmtnxt)){
-            mysqli_stmt_store_result($stmtnxt);
-            mysqli_stmt_bind_result($stmtnxt,$count);
-            if(mysqli_stmt_fetch($stmtnxt)){
-                $storedinterest=$count;
-            }
-        }
+        // $sqlnxt="SELECT COUNT(`interestedin`) FROM `interest` WHERE `interestedin`=?;";
+        // $stmtnxt=mysqli_prepare($conn,$sqlnxt);
+        // if(!$stmtnxt){
+        //     die("Statement preparation failed:".mysqli_error($conn));
+        // }
+        // mysqli_stmt_bind_param($stmtnxt,"s",$sfid);
+        // if(mysqli_stmt_execute($stmtnxt)){
+        //     mysqli_stmt_store_result($stmtnxt);
+        //     mysqli_stmt_bind_result($stmtnxt,$count);
+        //     if(mysqli_stmt_fetch($stmtnxt)){
+        //         $storedinterest=$count;
+        //     }
+        // }
         $storedsfid = $colsfid;
         $storedfirstname = $colfirstname;
         $storedmidname = $colmidname;
@@ -58,7 +58,7 @@ if(mysqli_stmt_execute($stmtnew)){
                 <div class="card" style="flex-grow:1">
                     <div class="row h-100 g-0">
                         <div class="col-12 position-relative">
-                            <img src="' . $photoUrl . '" class="img-fluid rounded-top" alt="...">
+                            <img src="' . $photoUrl . '" class="w-100 h-100 rounded-top" alt="...">
                             <div class="vignette d-flex justify-content-center align-items-end">
                                 <div class="d-flex justify-content-center align-items-end">
                                     <p style="font-size: 22px; font-weight: bold;">' .$name. '</p>
@@ -71,10 +71,9 @@ if(mysqli_stmt_execute($stmtnew)){
                                     <div class="col-12 p-0"><p class="card-text mb-2"><b>Safari-ID:</b> ' .$storedsfid. '</p></div>
                                     <div class="col-12 p-0"><p class="card-text mb-2"><b>Martial Status:</b> ' .$storedmartialstatus. '</p></div>
                                     <div class="col-12 p-0"><p class="card-text mb-2"><b>Age:</b> ' .$storedage. '</p></div>
-                                    <div class="col-12 p-0"><p class="card-text mb-4" style="color: #ff1493;"><b>Interests:</b> <span id ="interestdiv'.$storedsfid.'">'.$storedinterest.'</span</p></div>
                                     <div class="col-12 p-0">
                                         <div class="row p-0 m-0">
-                                            <div class="col-12 mb-0 p-0 px-2"><button id="check'.$storedsfid.'" type="button" class="btn chkbtn btn-sm mybtn px-1 w-100">Check in</button></div>
+                                            <div class="col-12 mb-0 p-0 px-0"><button id="check'.$storedsfid.'" type="button" class="btn chkbtn btn-sm mybtn px-0 w-100">Check in</button></div>
                                         </div>
                                     </div>
                                 </div>  

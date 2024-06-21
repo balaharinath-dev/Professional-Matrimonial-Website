@@ -1,4 +1,7 @@
 //filter
+if(document){
+    
+}
 $(document).ready(function(){
     $("#filteragestart,#filterageend").on("input",function(){
         var startValue=parseInt($("#filteragestart").val());
